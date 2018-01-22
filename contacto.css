@@ -1,0 +1,171 @@
+.cabeceraContacto{
+    margin: 24px 24px 48px 24px;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.iconoContacto{
+    height: 48px;
+}
+.tituloContacto{
+    color: #2e86ab;
+}
+.textoContacto{
+    margin-top: 24px;
+}
+.Formulario{
+    margin: 0px 6px 48px 6px;
+    padding-bottom: 24px;
+    background-color: #2e86ab;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+.tituloFormulario{
+    padding: 29px 18px 0px 18px;
+    font-weight: 600;
+}
+.label{
+    padding: 19px 0px 0px 18px;
+}
+input[type=text], input[type=email], input[type=phone], input[type=city], textarea[type=comments]{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 48px;
+    width: calc(100% - 36px);
+    height: 48px;
+    margin: 0px 18px 0px 18px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: #92dce5; 
+    padding-left: 6px;
+}
+textarea[type=comments]{
+    height: 120px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+.buttonForm{
+    height: 48px;
+    width: 198px;
+    background: linear-gradient(to bottom, #ff5d2e, #ec4e20);
+    border-radius: 50px;
+    border: transparent;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.25);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+input[type=submit] {
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.mapaSedes{
+    margin-bottom: 48px;
+}
+.nombreSedes{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.mapaEspana{
+    display: block;
+    margin: auto;
+}
+.bloqueDatosContacto{
+    margin: 0px 24px 48px 24px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.tituloDatosContacto{
+    margin-bottom: 12px;
+}
+.datosEmail, .datosTelefono, .datosDireccion{
+    display: flex;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #ec4e20;
+}
+.mail{
+    margin-left: 17px;
+}
+.telefono{
+    margin-left: 23px;
+}
+.direccion{
+    margin-left: 27.2px;
+}
+.iconoMapa{
+    max-height: 24px;
+}
+.agradecimiento{
+    background-image: url(img/fotogracias.jpg);
+    background-position: center;
+    width: 100%;
+    height: 360px;
+    
+}
+.gradient{
+    width: 100%;
+    height: 360px;
+    background-image: linear-gradient(to bottom,rgba(0, 0,0,0),rgba(0, 0, 0,0.64));
+}
+.textoAgradecimiento{
+    font-family: 'Merriweather',serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding-top: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
