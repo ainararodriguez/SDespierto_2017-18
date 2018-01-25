@@ -13,7 +13,13 @@ header{
 #header{
     display: flex;
     flex-direction: column;
-    font-family: Raleway,sans-serif;
+    font-family: Raleway,sans-serif;  
+}
+.text{
+    margin-bottom: 9px;
+}
+.text active{
+    font-weight: bold;
 }
 .logo{
     height: 48px;
@@ -21,31 +27,28 @@ header{
     margin-left: 24px;
     margin-right: 35px;
 }
-.logo-button{
+.logo-botton{
     display: flex;
     align-items: center;
     margin-top: 24px;
     margin-bottom: 17px;
 }
-.button{
+.botton{
     height: 48px;
     width: 121px;
     background: linear-gradient(to bottom, #ff5d2e, #ec4e20);
     border-radius: 50px;
     border: transparent;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0,0.25);
-    margin-left: auto;
-    margin-right: 24px;
 }
-.logo-button a{
+.logo-botton a{
     font-family: Raleway;
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
+    text-decoration: none;
     text-align: center;
     color: white;
-    padding: 0px 6px 0px 6px;
-    text-decoration: none;
 }
 ul{
     list-style: none;
@@ -53,12 +56,7 @@ ul{
 .menu{
     float: left;
 }
-.itemLeft{
-    margin-left: 24px;
-}
-.itemRight{
-    margin-left: 50px;
-}
+
 .indicador{
     background-color: #FFF;
     width:100%;
@@ -73,20 +71,11 @@ ul{
 .navegador li a{
     font-size: 16px;
     line-height: 24px;
-    color:#EC4E20;
+    margin-left: 24px;
+    color:black;
     text-decoration:none;
     display:block;
-}
-.text{
-    margin-top: 17px;
-    margin-bottom: 9px;
-}
-.text.active{
-    font-weight: bold;
-}
-hr{
-    width: 360px;
-    box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);   
+    margin-top: 17px;   
 }
 .footer{
     display: flex;
@@ -118,14 +107,6 @@ hr{
     height: 24px;
     width: 259px;
 }
-.email a{
-    color: white;
-    text-decoration: none;
-}
-.movil a{
-    color: white;
-    text-decoration: none;
-}
 .movil{
     margin-top: 24px;
 }
@@ -147,6 +128,10 @@ hr{
 .contacto{
     margin-top: 24px;
 }
+.contactos a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .avisolegal{
     height: 24px;
     width: 86px; 
@@ -166,6 +151,7 @@ hr{
     font-size: 12px;
     line-height: 24px;
     height: 50px;
+    width: 100%;
     background-color: #246783;
     margin-top: 16px;
 }

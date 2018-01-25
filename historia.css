@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+.itemRight{
+    font-weight: bold;  
+    margin-left: 50px;
+}
 section{
     margin-top: 4px;
 }
@@ -24,25 +31,25 @@ a{
     color: #ff8552;
 }
 h5{
-    font-family: Raleway,sans-serif;
-    font-weight: 600;
-    color: #2e86ab;
     font-size: 16px;
     line-height: 24px;
-    margin: 24px 0px 24px 24px;
+    font-family: Raleway,sans-serif;
+    font-weight: bold; 
+    color: #2e86ab;
 }
 h3{
     font-family: Merriweather,serif;
-    font-weight: 400;
+    font-weight: bold;
     color: #2e86ab;
     font-size: 24px;
     line-height: 28px;
-    margin: 0px 0px 24px 24px;
+    margin: 24px 0px 24px 24px;
 }
 .fotoSubcategoria{
     display: flex;
     justify-content: center;
-    background-image: url("img/fotoSubcategoriaHistoria.jpg");
+    background-repeat: no-repeat;
+    background-image: url("img/imgfotoSubcategoriaHistoria.jpg");
     background-position: center;
     width: 100%;
     height: 360px;
@@ -65,12 +72,12 @@ h3{
     margin: 24px;
 }
 .timeline{
-    margin: 72px 24px 60px 24.5px;
+    margin: 72px 24px 0px 24.5px;
     background-image: url(img/line.png);
     background-repeat: repeat-y;
     background-position:23px 0px;
     overflow: auto;
-    margin-bottom: 60px;
+    
 }
 .eventTimeline{
     display: flex;
@@ -101,7 +108,8 @@ h3{
     margin-bottom: 6px;
 }
 .bannerContacto{
-    background-image: url("img/fotobannercontacto.jpg");
+    background-image: url("img/imgfotobannercontacto.jpg");
+    background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 360px;
@@ -149,52 +157,3 @@ h3{
     padding: 0px 6px 0px 6px;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
