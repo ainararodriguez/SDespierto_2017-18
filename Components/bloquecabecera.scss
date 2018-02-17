@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+}
+.fotoca-becera{
+    height: 385px;
+    max-width: 100%;
+    margin-bottom: 22px;
+}
+.sombra{
+    display: flex;
+    position: absolute;
+    background-color: black;
+    opacity: .35;
+    width: 360px;
+    height: 385px;
+    margin-bottom: 22px;
+}
+.titulo-cabecera{
+    font-family: Raleway, sans-serif;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    margin-top: 199px;
+    margin-left: 24px;
+}
+.parrafo-cabecera{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    display: flex;
+    position: absolute;
+    margin-top: 264px;
+    margin-left: 24px;
+    width: 294px;
+}
