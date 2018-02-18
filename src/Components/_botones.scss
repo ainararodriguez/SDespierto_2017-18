@@ -8,9 +8,17 @@
     font-size: 1rem;
     border-radius: 6rem;
     border: transparent;
+
+}
+
+.boton-principal:hover{
+    background-color: white;
+    color: $c-orange6;
 }
 
 .boton-secundario{
+    font-family: 'Raleway';
+    font-weight: bold;
     height: 3rem;
     padding: 0 1.5rem 0 1.5rem;
     background-color: white;
@@ -18,4 +26,10 @@
     font-size: 1rem;
     border-radius: 6rem;
     border: transparent;
+
+}
+
+.boton-secundario:hover{
+    background-color: $c-orange6;
+    color: white;
 }

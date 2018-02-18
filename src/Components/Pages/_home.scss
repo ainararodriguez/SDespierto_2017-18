@@ -1,3 +1,9 @@
+/*INTRO*/
+
+.intro-home{
+    height: 768px;
+}
+
 .header-home{
     position: absolute;
     z-index:4;
@@ -27,7 +33,134 @@
     opacity: .3;
 }
 
-.intro-home{
-    background-color: hotpink;
 
+/*BLOQUES NARANJAS*/
+
+.bloque-naranja1-home{background-color: $c-orange6;}
+.bloque-naranja2-home{background-color: $c-orange5;}
+
+.texto-bloque-naranja-home{
+    padding: 3rem 0 4.5rem 0;
+    color: white;
+}
+
+
+/*LOCALIZACIONES*/
+
+.localizaciones{
+    background-image: url(../img/localidades_s.jpg);
+    height: 320px;
+    margin-bottom: 2rem;
+}
+
+.titulo-localizaciones{
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+}
+.texto-localizaciones{
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    height: 272px;
+}
+
+ul{
+    padding-left:0;
+}
+
+li{
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+}
+
+
+/*LOGROS*/
+
+.logros,.logro-menores{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-logros{
+    font-weight: 900;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.titulo-logro-menores,.titulo-logro-voluntarios{
+    margin-bottom: 0;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.dato{
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.menores,.voluntarios{
+    font-weight: 900;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+
+/*FOTO NIÑOS DE ESPALDAS*/
+
+.ninos-espalda{
+    height: 430px;
+    margin-bottom: 5.75rem;
+}
+
+.ninos-espalda img{
+    position: absolute;
+    left: 50%;
+    margin-left: calc(-718px/2);
+}
+
+
+/*BLOQUE PREGUNTAS*/
+
+.preguntas{
+    margin-bottom: 4.5rem;
+}
+
+.p2,.p3{
+    font-weight: bolder;
+}
+
+
+/*BLOQUE VERDE ACTIVIDADES*/
+
+.bloque-verde-actividades{
+    background-color: $c-green1;
+    color: white;
+    padding: 3rem 0 1.5rem 0;
+}
+
+.boton-informate{
+    margin-left: 1.5rem;
+}
+
+
+/*FOTO VOLUNTARIO DE ESPALDAS*/
+
+.voluntario-espaldas{
+    height: 430px;
+    margin-bottom: 5.75rem;
+}
+
+
+/*TEXTO PROMOVER VOLUNTARIADO*/
+
+.texto-promover-voluntariado{
+    padding: 3rem 0;
 }

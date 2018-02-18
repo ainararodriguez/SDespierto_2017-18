@@ -1,0 +1,30 @@
+.img-banner-voluntario{
+    z-index: 1;
+    right: 0;
+    width: 100%;
+}
+
+.texto-banner-voluntariado{
+    position: relative;
+
+    color: white;
+    font-weight: 900;
+    margin-top: 4.5rem;
+    max-width: 60%;
+}
+
+.boton-voluntario{
+    position: relative;
+
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.contenido-banner-voluntariado{
+    position: absolute;
+    z-index: 2;
+}
+
+a{
+    text-decoration: none;
+}
