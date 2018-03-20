@@ -1,0 +1,23 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>facebook</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7257 -3285)">
+<g id="facebook">
+<use xlink:href="#path0_fill" fill="url(#pattern0)" transform="translate(7257 3285)"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(7257 3285)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(7257 3285)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="matrix(0.00613497 0 0 0.00613497 0 0)"/>
+</pattern>
+<path id="path0_fill" d="M 0 8C 0 3.58172 3.58172 0 8 0L 32 0C 36.4183 0 40 3.58172 40 8L 40 32C 40 36.4183 36.4183 40 32 40L 8 40C 3.58172 40 0 36.4183 0 32L 0 8Z"/>
+<path id="path1_stroke_2x" d="M 8 3L 32 3L 32 -3L 8 -3L 8 3ZM 37 8L 37 32L 43 32L 43 8L 37 8ZM 32 37L 8 37L 8 43L 32 43L 32 37ZM 3 32L 3 8L -3 8L -3 32L 3 32ZM 8 37C 5.23858 37 3 34.7614 3 32L -3 32C -3 38.0751 1.92487 43 8 43L 8 37ZM 37 32C 37 34.7614 34.7614 37 32 37L 32 43C 38.0751 43 43 38.0751 43 32L 37 32ZM 32 3C 34.7614 3 37 5.23858 37 8L 43 8C 43 1.92487 38.0751 -3 32 -3L 32 3ZM 8 -3C 1.92487 -3 -3 1.92487 -3 8L 3 8C 3 5.23858 5.23858 3 8 3L 8 -3Z"/>
+<image id="image0" width="163" height="163" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>

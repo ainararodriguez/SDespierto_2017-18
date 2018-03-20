@@ -1,0 +1,59 @@
+.footer{
+    background:$c-grey1;
+}
+.footeritems{
+    padding: 1.4rem  1.4rem;
+    color: white;
+}
+@media only screen and (min-width: $MQ-M){
+    .containeritems{
+        display: flex;
+    }
+}
+.logofooter{
+    margin-bottom: 2.125rem;
+}
+@media only screen and (min-width: $MQ-M){
+    .containerfooter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.contactos{
+    color: $c-orange1;
+    font-weight: bold;
+}
+@media only screen and (min-width: $MQ-M){
+    .contactos{
+        margin-right:7.6rem;
+    }
+}
+.menufooter a{
+    color: white;
+    margin-right: 7.5rem;   
+}
+.politica{
+    color: white;
+    
+}
+@media only screen and (min-width: $MQ-L){
+    .politica{
+        margin-right: 13.4rem;
+    }
+}
+.copyrightitem{
+    background: $c-grey2;
+    color: white;
+    text-align: center;
+    padding: 1.75rem 5rem;
+}
+.containeritems{
+    display: flex;
+    margin-bottom: 3rem;
+    
+}
+.instagram, .facebook, .twitter{
+    width: 40px;
+    height: 40px;
+    margin-right: 2.3rem;
+}
