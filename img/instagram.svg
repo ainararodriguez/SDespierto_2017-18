@@ -1,0 +1,34 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>instagram</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-7176 -3285)">
+<g id="instagram">
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(7186 3295)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(7186 3295)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="Ellipse 2">
+<use xlink:href="#path2_fill" transform="translate(7204 3291)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path3_fill" fill="white" transform="translate(7176 3285)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path4_stroke_2x" transform="translate(7176 3285)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 20 10C 20 15.5228 15.5228 20 10 20C 4.47715 20 0 15.5228 0 10C 0 4.47715 4.47715 0 10 0C 15.5228 0 20 4.47715 20 10Z"/>
+<path id="path1_stroke_2x" d="M 17 10C 17 13.866 13.866 17 10 17L 10 23C 17.1797 23 23 17.1797 23 10L 17 10ZM 10 17C 6.13401 17 3 13.866 3 10L -3 10C -3 17.1797 2.8203 23 10 23L 10 17ZM 3 10C 3 6.13401 6.13401 3 10 3L 10 -3C 2.8203 -3 -3 2.8203 -3 10L 3 10ZM 10 3C 13.866 3 17 6.13401 17 10L 23 10C 23 2.8203 17.1797 -3 10 -3L 10 3Z"/>
+<path id="path2_fill" d="M 5 2.5C 5 3.88071 3.88071 5 2.5 5C 1.11929 5 0 3.88071 0 2.5C 0 1.11929 1.11929 0 2.5 0C 3.88071 0 5 1.11929 5 2.5Z"/>
+<path id="path3_fill" d="M 0 8C 0 3.58172 3.58172 0 8 0L 32 0C 36.4183 0 40 3.58172 40 8L 40 32C 40 36.4183 36.4183 40 32 40L 8 40C 3.58172 40 0 36.4183 0 32L 0 8Z"/>
+<path id="path4_stroke_2x" d="M 8 3L 32 3L 32 -3L 8 -3L 8 3ZM 37 8L 37 32L 43 32L 43 8L 37 8ZM 32 37L 8 37L 8 43L 32 43L 32 37ZM 3 32L 3 8L -3 8L -3 32L 3 32ZM 8 37C 5.23858 37 3 34.7614 3 32L -3 32C -3 38.0751 1.92487 43 8 43L 8 37ZM 37 32C 37 34.7614 34.7614 37 32 37L 32 43C 38.0751 43 43 38.0751 43 32L 37 32ZM 32 3C 34.7614 3 37 5.23858 37 8L 43 8C 43 1.92487 38.0751 -3 32 -3L 32 3ZM 8 -3C 1.92487 -3 -3 1.92487 -3 8L 3 8C 3 5.23858 5.23858 3 8 3L 8 -3Z"/>
+</defs>
+</svg>

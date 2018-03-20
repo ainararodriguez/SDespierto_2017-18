@@ -1,10 +1,20 @@
-@import 'utils/breakpoints.scss';
-@import 'utils/headings.scss';
-@import 'utils/colors.scss';
-@import 'components/bloquecabecera.scss';
-@import 'components/bloquesubcategoria.scss';
-@import 'components/header.scss';
-@import 'components/pages/home.scss';
-@import 'components/botones.scss';
-@import 'components/banner_voluntariado.scss';
-@import 'components/banner_participa.scss';
+@import 'utils/breakpoints';
+@import 'utils/headings';
+@import 'utils/colors';
+
+@import 'components/bloquecabecera';
+@import 'components/bloquesubcategoria';
+
+@import 'components/header';
+
+@import 'components/pages/home';
+@import 'components/pages/conocenos';
+
+@import 'components/botones';
+
+@import 'components/banner_voluntariado';
+@import 'components/banner_participa';
+
+@import 'components/footer';
+
+
