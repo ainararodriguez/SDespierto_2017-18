@@ -18,6 +18,13 @@ h1 {
   }
 }
 
+@media (min-width: 969px) {
+  h1 {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+
 h2 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -28,6 +35,13 @@ h2 {
   h2 {
     max-width: 85%;
     margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 969px) {
+  h2 {
+    max-width: 100%;
+    margin-left: 0px;
   }
 }
 
@@ -45,6 +59,13 @@ h3 {
   }
 }
 
+@media (min-width: 969px) {
+  h3 {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+
 h4 {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -55,6 +76,13 @@ h4 {
   h4 {
     max-width: 85%;
     margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 969px) {
+  h4 {
+    max-width: 100%;
+    margin-left: 0px;
   }
 }
 
@@ -71,8 +99,38 @@ p {
   }
 }
 
+@media (min-width: 969px) {
+  p {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
+
 * {
   margin: 0px;
+}
+
+.cabeceraCategoria {
+  background-image: url(../img/foto_conocenos.jpg);
+  height: 385px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+.gradient {
+  width: 100%;
+  height: 385px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.textosCategoria {
+  color: white;
+  width: 100%;
+}
+
+.tituloCategoria {
+  padding-top: 200px;
 }
 
 .bloque-cabecera {
@@ -81,24 +139,6 @@ p {
   width: 300px;
   background-repeat: no-repeat;
   background-origin: content-box, padding-box;
-}
-
-/*.foto-cabecera{
-    width: auto;
-    max-height: 385px;
-    background-size: cover;
-    margin-bottom: 22px;
-    background-repeat: no-repeat;
-    background-origin: content-box, padding-box;
-}*/
-.sombra {
-  display: flex;
-  position: absolute;
-  background-color: black;
-  opacity: .35;
-  width: 100%;
-  height: 385px;
-  margin-bottom: 22px;
 }
 
 .titulo-cabecera {
@@ -122,6 +162,16 @@ p {
   margin-top: 264px;
   margin-left: 24px;
   width: 294px;
+}
+
+@media only screen and (min-width: 969px) {
+  .textosCategoria {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .descripcionCategoria {
+    max-width: 50%;
+  }
 }
 
 .bloque1-subcategoria {
@@ -366,34 +416,6 @@ ul {
   padding: 3rem 0;
 }
 
-.transparenciaFoto {
-  position: absolute;
-  z-index: 2;
-  height: 385px;
-  width: 100%;
-  background-color: black;
-  opacity: .3;
-}
-
-.cabeceraCategoria {
-  background-image: url(../img/foto_conocenos.jpg);
-  height: 385px;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  margin-bottom: 3rem;
-}
-
-.textosCategoria {
-  color: white;
-  z-index: 3;
-  position: absolute;
-}
-
-.tituloCategoria {
-  padding-top: 200px;
-}
-
 .tituloTransparencia {
   font-size: 2.5rem;
   font-weight: 900;
@@ -497,6 +519,40 @@ ul {
   font-size: 1.25rem;
 }
 
+@media only screen and (min-width: 969px) {
+  .transparenciaWrap, .textosConocenos {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .textoTransparencia {
+    display: flex;
+  }
+  .textoCompromiso {
+    margin-top: 0px;
+  }
+  .bloqTransparencia1 {
+    width: 50%;
+    margin-right: 4.5rem;
+  }
+  .iconPdf {
+    margin-left: 1.0px;
+  }
+  .transparenciaWrap, .textosConocenos, .mision {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .mision {
+    width: 50%;
+  }
+  .visionValoresWrap {
+    display: flex;
+  }
+  .vision, .valores {
+    width: 50%;
+    margin-right: 3rem;
+  }
+}
+
 .boton-principal {
   font-family: 'Raleway';
   font-weight: bold;
@@ -598,7 +654,7 @@ a {
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 969px) {
   .containeritems {
     display: flex;
   }
@@ -608,7 +664,7 @@ a {
   margin-bottom: 2.125rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 969px) {
   .containerfooter {
     display: flex;
     flex-wrap: wrap;
@@ -620,7 +676,7 @@ a {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 969px) {
   .contactos {
     margin-right: 7.6rem;
   }
@@ -635,7 +691,7 @@ a {
   color: white;
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1024px) {
   .politica {
     margin-right: 13.4rem;
   }
