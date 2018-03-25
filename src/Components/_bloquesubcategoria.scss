@@ -1,7 +1,7 @@
 
 .bloque1-subcategoria{
     color: white;
-    margin-bottom: 3rem;
+    //margin-bottom: 3rem;
 }
 
 .detalle-subcategoria{
@@ -17,8 +17,8 @@
 
 
 .detalle-subcategoria{
-    padding-top: 10rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -37,5 +37,9 @@
     .detalle-subcategoria{
         max-width: 1024px;
         margin: auto;
+    }
+
+    .descripcion-subcategoria{
+        max-width: 512px;
     }
 }
