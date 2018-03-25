@@ -1,6 +1,7 @@
 
 .bloque1-subcategoria{
     color: white;
+    margin-bottom: 3rem;
 }
 
 .detalle-subcategoria{
@@ -11,25 +12,34 @@
 .pictograma{
     height: 3rem;
     margin-top: 1.5rem;
+    margin-right: 0.75rem;
 }
 
-.titulo-subcategoria{
-    margin-top: -1.5rem;
-}
 
-.textos-subcategoria{
-    margin-left: -0.75rem;
+.detalle-subcategoria{
+    padding-top: 10rem;
+    padding-bottom: 3rem;
 }
 
 
 /*Backgrounds bloque subcategoria*/
-.equipo{background-color:$c-blue4;}
-.historia{background-color:$c-blue5;}
-.amigos{background-color:$c-green1;}
-.educar{background-color:$c-green2;}
-.pequeños{background-color:$c-green3;}
-.formacion{background-color:$c-green4;}
-.becas{background-color:$c-green5;}
-.navidad{background-color:$c-green1;}
-.niño{background-color:$c-green2;}
-.escapada{background-color:$c-green3;}
+.equipo{background-color:$c-blue1;}
+.historia{background-color:$c-blue2;}
+.programa{background-color:$c-green2;}
+.evento{background-color:$c-green1;}
+
+
+
+
+//RESPONSIVE SIZES
+
+@media only screen and (min-width: $MQ-M){
+    .detalle-subcategoria{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .descripcion-subcategoria{
+        width: 50%;
+    }
+}

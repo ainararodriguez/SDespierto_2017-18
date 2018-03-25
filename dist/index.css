@@ -176,6 +176,7 @@ p {
 
 .bloque1-subcategoria {
   color: white;
+  margin-bottom: 3rem;
 }
 
 .detalle-subcategoria {
@@ -186,55 +187,39 @@ p {
 .pictograma {
   height: 3rem;
   margin-top: 1.5rem;
+  margin-right: 0.75rem;
 }
 
-.titulo-subcategoria {
-  margin-top: -1.5rem;
-}
-
-.textos-subcategoria {
-  margin-left: -0.75rem;
+.detalle-subcategoria {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
 }
 
 /*Backgrounds bloque subcategoria*/
 .equipo {
-  background-color: #359BC6;
-}
-
-.historia {
   background-color: #3290B8;
 }
 
-.amigos {
-  background-color: #5BC3B0;
+.historia {
+  background-color: #2A7C9E;
 }
 
-.educar {
-  background-color: #4EBFAA;
+.programa {
+  background-color: #359482;
 }
 
-.pequeños {
-  background-color: #43B9A3;
-}
-
-.formacion {
-  background-color: #3FAD98;
-}
-
-.becas {
+.evento {
   background-color: #3AA08D;
 }
 
-.navidad {
-  background-color: #5BC3B0;
-}
-
-.niño {
-  background-color: #4EBFAA;
-}
-
-.escapada {
-  background-color: #43B9A3;
+@media only screen and (min-width: 969px) {
+  .detalle-subcategoria {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .descripcion-subcategoria {
+    width: 50%;
+  }
 }
 
 .header {
@@ -396,7 +381,7 @@ ul {
 
 /*BLOQUE VERDE ACTIVIDADES*/
 .bloque-verde-actividades {
-  background-color: #5BC3B0;
+  background-color: #3AA08D;
   color: white;
   padding: 3rem 0 1.5rem 0;
 }
@@ -491,34 +476,35 @@ ul {
   background-position: center;
 }
 
-.bloqSubcat1, .bloqSubcat2 {
-  display: flex;
-  color: white;
-  align-items: center;
-  padding: 3rem 1.5rem;
+/*NAVEGACION SUBCATEGORIAS
+
+.bloqSubcat1, .bloqSubcat2{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 3rem 1.5rem;
 }
 
-.bloqSubcat1 {
-  background-color: #3290B8;
+.bloqSubcat1{
+    background-color: $c-blue5;
 }
 
-.bloqSubcat2 {
-  background-color: #2A7C9E;
+.bloqSubcat2{
+    background-color: $c-blue6;
 }
 
-.ilustracion {
-  width: 3rem;
+.ilustracion{
+    width: 3rem;;
 }
 
-.flecha {
-  height: 1.5rem;
+.flecha{
+    height: 1.5rem;
 }
 
-.tituloBloqSubcat {
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-
+.tituloBloqSubcat{
+    font-weight: bold;
+    font-size: 1.25rem;
+}*/
 @media only screen and (min-width: 969px) {
   .transparenciaWrap, .textosConocenos {
     max-width: 1024px;
