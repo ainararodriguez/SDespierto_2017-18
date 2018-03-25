@@ -1,0 +1,78 @@
+.p1{
+    background-image: url(https://unsplash.it/1000/500?random&cache=1);
+}
+
+.fotoActividad{
+
+    height: 385px;
+    background-size: cover;
+    background-position: center;
+}
+
+.descripcionActividad{
+    background-color: #CDF7EF;
+    margin-bottom: 4.5rem;
+}
+
+.textDescripcionActividad{
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.datosActividadTitle{
+    text-transform: uppercase;
+    color: $c-green2;
+}
+
+.datoIcon{
+    height: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.datoTitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $c-green2;
+    margin-bottom: 0px;
+}
+
+.datoDescripcion{
+    margin-bottom: 1.5rem;
+}
+
+.datosActividadWrap{
+    padding-bottom: 4.5rem;
+}
+
+
+
+
+@media only screen and (min-width: $MQ-M){
+    .textDescripcionActividad{
+        max-width: 512px;
+        margin-left: calc(50% - 512px);
+        padding-left: 1.5rem;
+    }
+
+    .datosActividadWrap{
+        max-width: 1024px;
+        margin: auto;
+        padding-left: 1.5rem;
+    }
+
+    .bloquesDatos{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bloqueDatos1, .bloqueDatos2{
+        width: 50%;
+        margin-right: 4.5rem;
+    }
+
+    .datoIcon{
+        margin-left: 0px;
+    }
+
+}
