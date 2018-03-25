@@ -1,31 +1,3 @@
-.transparenciaFoto{
-    position: absolute;
-    z-index:2;
-    height: 385px;
-    width: 100%;
-    background-color: black;
-    opacity: .3;
-}
-
-.cabeceraCategoria{
-    background-image: url(../img/foto_conocenos.jpg);
-    height: 385px;
-    background-size: cover;
-    background-position: center;
-    z-index:1;
-    margin-bottom: 3rem;
-}
-
-.textosCategoria{
-    color: white;
-    z-index: 3;
-    position: absolute;
-}
-
-.tituloCategoria{
-    padding-top: 200px;
-}
-
 .tituloTransparencia{
     font-size: 2.5rem;
     font-weight: 900;
@@ -132,4 +104,47 @@
 .tituloBloqSubcat{
     font-weight: bold;
     font-size: 1.25rem;
+}
+
+
+@media only screen and (min-width: $MQ-M){
+    .transparenciaWrap, .textosConocenos{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .textoTransparencia {
+        display: flex;
+    }
+
+    .textoCompromiso{
+        margin-top: 0px;
+    }
+
+    .bloqTransparencia1{
+        width: 50%;
+        margin-right: 4.5rem;
+    }
+
+    .iconPdf{
+        margin-left: 1.0px;
+    }
+
+    .transparenciaWrap, .textosConocenos, .mision{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .mision{
+        width: 50%;
+    }
+
+    .visionValoresWrap{
+        display: flex;
+    }
+
+    .vision, .valores{
+        width: 50%;
+        margin-right: 3rem;
+    }
 }
