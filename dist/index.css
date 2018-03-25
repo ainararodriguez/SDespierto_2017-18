@@ -658,9 +658,9 @@ ul {
   padding-bottom: 3rem;
 }
 
-.datosActividadTitle {
-  text-transform: uppercase;
-  color: #359482;
+.tituloDescrip2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 .datoIcon {
@@ -672,7 +672,14 @@ ul {
   text-transform: uppercase;
   font-weight: bold;
   color: #359482;
-  margin-bottom: 0px;
+}
+
+.datosActividadTitle, .datoTitleVolunt {
+  color: #359482;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  text-transform: none;
 }
 
 .datoDescripcion {
@@ -681,6 +688,10 @@ ul {
 
 .datosActividadWrap {
   padding-bottom: 4.5rem;
+}
+
+.tituloDescrip2 {
+  margin-bottom: 0.75rem;
 }
 
 @media only screen and (min-width: 969px) {
@@ -693,8 +704,6 @@ ul {
     max-width: 1024px;
     margin: auto;
     padding-left: 1.5rem;
-  }
-  .bloquesDatos {
     display: flex;
     justify-content: space-between;
   }
