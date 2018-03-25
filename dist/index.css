@@ -176,7 +176,6 @@ p {
 
 .bloque1-subcategoria {
   color: white;
-  margin-bottom: 3rem;
 }
 
 .detalle-subcategoria {
@@ -191,8 +190,8 @@ p {
 }
 
 .detalle-subcategoria {
-  padding-top: 10rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
 }
 
 /*Backgrounds bloque subcategoria*/
@@ -216,6 +215,9 @@ p {
   .detalle-subcategoria {
     max-width: 1024px;
     margin: auto;
+  }
+  .descripcion-subcategoria {
+    max-width: 512px;
   }
 }
 
@@ -536,6 +538,10 @@ ul {
   }
 }
 
+.timelineHistoria {
+  padding-top: 3rem;
+}
+
 .timelines {
   margin-bottom: 3rem;
 }
@@ -628,6 +634,76 @@ ul {
   }
   .historiaDescription {
     width: 50%;
+  }
+}
+
+.p1 {
+  background-image: url(https://unsplash.it/1000/500?random&cache=1);
+}
+
+.fotoActividad {
+  height: 385px;
+  background-size: cover;
+  background-position: center;
+}
+
+.descripcionActividad {
+  background-color: #CDF7EF;
+  margin-bottom: 4.5rem;
+}
+
+.textDescripcionActividad {
+  font-weight: bold;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.datosActividadTitle {
+  text-transform: uppercase;
+  color: #359482;
+}
+
+.datoIcon {
+  height: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.datoTitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #359482;
+  margin-bottom: 0px;
+}
+
+.datoDescripcion {
+  margin-bottom: 1.5rem;
+}
+
+.datosActividadWrap {
+  padding-bottom: 4.5rem;
+}
+
+@media only screen and (min-width: 969px) {
+  .textDescripcionActividad {
+    max-width: 512px;
+    margin-left: calc(50% - 512px);
+    padding-left: 1.5rem;
+  }
+  .datosActividadWrap {
+    max-width: 1024px;
+    margin: auto;
+    padding-left: 1.5rem;
+  }
+  .bloquesDatos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bloqueDatos1, .bloqueDatos2 {
+    width: 50%;
+    margin-right: 4.5rem;
+  }
+  .datoIcon {
+    margin-left: 0px;
   }
 }
 
