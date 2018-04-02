@@ -21,7 +21,19 @@
     z-index:1;
     margin-bottom: 3rem;
 }
-
+.cabeceraCategoriaColor{
+    display: flex;
+    background:$c-blue2;
+    height: 20rem;
+    background-position: center;
+    z-index:1;
+    margin-bottom: 3rem;
+}
+@media only screen and (min-width: $MQ-L){
+    .cabeceraCategoriaColor{
+        height: 21rem;
+    }
+}
 .gradient{
     width: 100%;
     height: 385px;
