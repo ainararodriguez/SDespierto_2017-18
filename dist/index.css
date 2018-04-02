@@ -221,6 +221,121 @@ p {
   }
 }
 
+.footer {
+  background: #444343;
+}
+
+.footeritems {
+  color: white;
+}
+
+@media only screen and (min-width: 969px) {
+  .containeritems {
+    display: flex;
+  }
+}
+
+.logofooter {
+  padding: 1.4rem  1.4rem;
+  margin-bottom: 2.125rem;
+}
+
+@media only screen and (min-width: 969px) {
+  .containerfooter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contactos {
+  margin-right: 2rem;
+  color: #FF8552;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 969px) {
+  .textocontactos {
+    margin-right: 7.6rem;
+  }
+}
+
+.menufooter a {
+  color: white;
+  margin-right: 8rem;
+}
+
+.politica {
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .politica {
+    margin-right: 13.4rem;
+  }
+}
+
+.copyrightitem {
+  background: #292828;
+  color: white;
+  text-align: center;
+  padding: 1.75rem 5rem;
+}
+
+.containeritems {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.iconosredes {
+  padding: 0 0 1.4rem 1.4rem;
+}
+
+.instagram, .facebook, .twitter {
+  width: 40px;
+  height: 40px;
+  margin-right: 2.3rem;
+}
+
+.boton-principal {
+  font-family: 'Raleway';
+  font-weight: bold;
+  height: 3rem;
+  padding: 0 1.5rem 0 1.5rem;
+  background-color: #FC4A00;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6rem;
+  border: transparent;
+}
+
+.boton-principal:hover {
+  background-color: white;
+  color: #FC4A00;
+}
+
+.boton-secundario {
+  font-family: 'Raleway';
+  font-weight: bold;
+  height: 3rem;
+  padding: 0 1.5rem 0 1.5rem;
+  background-color: white;
+  color: #FC4A00;
+  font-size: 1rem;
+  border-radius: 6rem;
+  border: transparent;
+}
+
+.boton-secundario:hover {
+  background-color: #FC4A00;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -231,17 +346,110 @@ p {
   width: 85%;
 }
 
-.menu {
-  text-align: center;
+#menu {
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 20%;
 }
 
-.menuicon {
-  margin-bottom: 0.25rem;
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+#menu ul li {
+  position: relative;
+  display: inline-block;
+}
+
+#menu ul li:hover {
+  font-weight: bold;
+}
+
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+}
+
+#menu ul ul li {
+  float: none;
+  width: 150px;
+}
+
+#menu ul ul a {
+  line-height: 120%;
+  padding: 10px 10px;
+}
+
+#menu ul li:hover > ul {
+  display: block;
 }
 
 .logo-blanco {
   height: auto;
   width: 130px;
+}
+
+ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+ul .inner.show {
+  /* display: block; */
+}
+
+ul li {
+  margin: .5em 0;
+}
+
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  background: orangered(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: 0;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+}
+
+ul li a.toggle:hover {
+  background: #FC4A00;
+}
+
+/*MENÚ MOBILE*/
+.menuMobile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 2.5rem;
+}
+
+.menuHamburguesa {
+  width: 2rem;
+  margin: auto;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 969px) {
+  .menuMobile {
+    display: none;
+  }
+}
+
+hr {
+  margin-bottom: 0.5rem;
 }
 
 /*INTRO*/
@@ -637,8 +845,60 @@ ul {
   }
 }
 
-.p1 {
-  background-image: url(https://unsplash.it/1000/500?random&cache=1);
+.p1f1 {
+  background-image: url(../img/p1foto1.jpg);
+}
+
+.p1f2 {
+  background-image: url(../img/p1foto2.jpg);
+}
+
+.p2f1 {
+  background-image: url(../img/p2foto1.jpg);
+}
+
+.p2f2 {
+  background-image: url(../img/p2foto2.jpg);
+}
+
+.p3f1 {
+  background-image: url(../img/p3foto1.jpg);
+}
+
+.p3f2 {
+  background-image: url(../img/p3foto2.jpg);
+}
+
+.p4f1 {
+  background-image: url(../img/p4foto1.jpg);
+}
+
+.p4f2 {
+  background-image: url(../img/p4foto2.jpg);
+}
+
+.e1f1 {
+  background-image: url(../img/e1foto1.jpg);
+}
+
+.e1f2 {
+  background-image: url(../img/e1foto2.jpg);
+}
+
+.e2f1 {
+  background-image: url(../img/e2foto1.jpg);
+}
+
+.e2f2 {
+  background-image: url(../img/e2foto2.jpg);
+}
+
+.e3f1 {
+  background-image: url(../img/e3foto1.jpg);
+}
+
+.e3f2 {
+  background-image: url(../img/e3foto2.jpg);
 }
 
 .fotoActividad {
@@ -716,38 +976,75 @@ ul {
   }
 }
 
-.boton-principal {
-  font-family: 'Raleway';
-  font-weight: bold;
-  height: 3rem;
-  padding: 0 1.5rem 0 1.5rem;
-  background-color: #FC4A00;
-  color: white;
-  font-size: 1rem;
-  border-radius: 6rem;
-  border: transparent;
+.containerEquipo {
+  max-width: 1024px;
+  margin: auto;
 }
 
-.boton-principal:hover {
+.cajaEquipo {
+  margin-bottom: 1.75rem;
+}
+
+.fotoEquipo {
+  width: 100%;
+}
+
+@media only screen and (min-width: 969px) {
+  .fotoEquipo {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+.small {
+  width: 362px;
+}
+
+.textoEquipo {
   background-color: white;
-  color: #FC4A00;
+  margin: 0 auto;
+  margin-bottom: 1.625rem;
 }
 
-.boton-secundario {
-  font-family: 'Raleway';
-  font-weight: bold;
-  height: 3rem;
-  padding: 0 1.5rem 0 1.5rem;
-  background-color: white;
-  color: #FC4A00;
-  font-size: 1rem;
-  border-radius: 6rem;
-  border: transparent;
+@media only screen and (min-width: 969px) {
+  .textoEquipo {
+    justify-content: space-around;
+  }
 }
 
-.boton-secundario:hover {
-  background-color: #FC4A00;
-  color: white;
+@media only screen and (min-width: 969px) {
+  .roolEquipo {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 969px) {
+  .primcolumn {
+    width: 50%;
+  }
+}
+
+.sede {
+  margin-bottom: 1rem;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.cargo {
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 969px) {
+  .sedesFlex {
+    display: flex;
+    width: 300px;
+  }
+}
+
+.space {
+  margin-right: 30%;
 }
 
 .img-banner-voluntario {
@@ -806,74 +1103,4 @@ a {
 .contenido-banner-participa {
   position: absolute;
   z-index: 2;
-}
-
-.footer {
-  background: #444343;
-}
-
-.footeritems {
-  padding: 1.4rem  1.4rem;
-  color: white;
-}
-
-@media only screen and (min-width: 969px) {
-  .containeritems {
-    display: flex;
-  }
-}
-
-.logofooter {
-  margin-bottom: 2.125rem;
-}
-
-@media only screen and (min-width: 969px) {
-  .containerfooter {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.contactos {
-  color: #FF8552;
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 969px) {
-  .contactos {
-    margin-right: 7.6rem;
-  }
-}
-
-.menufooter a {
-  color: white;
-  margin-right: 7.5rem;
-}
-
-.politica {
-  color: white;
-}
-
-@media only screen and (min-width: 1024px) {
-  .politica {
-    margin-right: 13.4rem;
-  }
-}
-
-.copyrightitem {
-  background: #292828;
-  color: white;
-  text-align: center;
-  padding: 1.75rem 5rem;
-}
-
-.containeritems {
-  display: flex;
-  margin-bottom: 3rem;
-}
-
-.instagram, .facebook, .twitter {
-  width: 40px;
-  height: 40px;
-  margin-right: 2.3rem;
 }
