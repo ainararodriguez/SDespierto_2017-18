@@ -1,10 +1,24 @@
 *{margin: 0px;}
 
+.transparenciaFoto{
+    position: absolute;
+    z-index:2;
+    height: 24rem;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+}
+@media only screen and (min-width: $MQ-L){
+    .transparenciaFoto{
+        height: 24rem;
+    }
+}
 .cabeceraCategoria{
     background-image: url(../img/foto_conocenos.jpg);
-    height: 385px;
+    height: 24rem;
     background-size: cover;
     background-position: center;
+    z-index:1;
     margin-bottom: 3rem;
 }
 
@@ -16,11 +30,22 @@
 
 .textosCategoria{
     color: white;
-    width: 100%;
+    z-index: 3;
+    position: absolute;
+}
+@media only screen and (min-width: $MQ-L){
+    .textosCategoria{
+        margin-left: 8rem;
+    }
 }
 
 .tituloCategoria{
-    padding-top: 200px;
+    padding-top: 120px;
+}
+@media only screen and (min-width: $MQ-L){
+    .tituloCategoria{
+        margin-left: 8rem;
+    }
 }
 
 
@@ -54,7 +79,6 @@
     width: 294px;
 }
 
-
 @media only screen and (min-width: $MQ-M){
     .textosCategoria{
         max-width: 1024px;
@@ -63,5 +87,11 @@
 
     .descripcionCategoria{
         max-width: 50%;
+    }
+}
+@media only screen and (min-width: $MQ-L){
+    .descripcionCategoria{
+        max-width:80%;
+        margin-left: 8rem;
     }
 }
