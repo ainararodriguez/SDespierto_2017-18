@@ -1,90 +1,3 @@
-// .p1{
-//     background-image: url(https://unsplash.it/1000/500?random&cache=1);
-// }
-
-// .fotoActividad{
-
-//     height: 385px;
-//     background-size: cover;
-//     background-position: center;
-// }
-
-// .descripcionActividad{
-//     background-color: #CDF7EF;
-//     margin-bottom: 4.5rem;
-// }
-
-// .textDescripcionActividad{
-//     font-weight: bold;
-//     padding-top: 3rem;
-//     padding-bottom: 3rem;
-// }
-
-// .tituloDescrip2{
-//     font-size: 2rem;
-//     line-height: 2.5rem;
-// }
-
-// .datoIcon{
-//     height: 1.5rem;
-//     margin-left: 1.5rem;
-// }
-
-// .datoTitle{
-//     text-transform: uppercase;
-//     font-weight: bold;
-//     color: $c-green2;
-// }
-
-// .datosActividadTitle, .datoTitleVolunt{
-//     color: $c-green2;
-//     font-size: 2rem;
-//     font-weight: bold;
-//     line-height: 2.5rem;
-//     text-transform: none;
-// }
-
-// .datoDescripcion{
-//     margin-bottom: 1.5rem;
-// }
-
-// .datosActividadWrap{
-//     padding-bottom: 4.5rem;
-// }
-
-// .tituloDescrip2{
-//     margin-bottom: 0.75rem;
-// }
-
-
-
-
-// @media only screen and (min-width: $MQ-M){
-//     .textDescripcionActividad{
-//         max-width: 512px;
-//         margin-left: calc(50% - 512px);
-//         padding-left: 1.5rem;
-//     }
-
-//     .datosActividadWrap{
-//         max-width: 1024px;
-//         margin: auto;
-//         padding-left: 1.5rem;
-//         display: flex;
-//         justify-content: space-between;
-//     }
-
-//     .bloqueDatos1, .bloqueDatos2{
-//         width: 50%;
-//         margin-right: 4.5rem;
-//     }
-
-//     .datoIcon{
-//         margin-left: 0px;
-//     }
-
-//}
-
 .nblack{
     font-weight: 700;
 }
@@ -94,7 +7,7 @@
     height: 385px;
     background-size: cover;
     background-position: center;
-    margin-bottom: 3rem;
+    
 }
 
 .actividadesGradient{
@@ -102,3 +15,94 @@
     height: 385px;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.actividadesgrid {
+    display: grid;
+    padding: 10px;
+    grid-template-areas: 
+        "programas eventos";
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr;
+}
+
+
+
+/*nombrar areas*/
+
+.actividadessubtitulo {
+    
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.actividadeslistas {
+    display: grid;
+    grid-area: listas;
+    padding: 1.5rem;
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.actividadesprogramas {
+    grid-area: programas;
+    padding: 1rem;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.actividadescellprograma{
+    background-color: #359482;
+    display: grid;
+    grid-template-columns: .9fr .1fr;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    height: 100px;
+}
+
+.actividadeseventos {
+    grid-area: eventos;
+    padding: 1rem;
+    display: grid;
+    grid-row-gap:10px;
+    align-items: start;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.actividadescellevento{
+    background-color: #6FCF97;
+    display: grid;
+    grid-template-columns: .9fr .1fr;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    height: 100px;
+}
+
+.actividadestitulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    justify-items: start;
+}
+
+.actividadestitulo #title{
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+ .actividadesgrid .arrou{
+    align-self: center;
+    justify-self: center;
+ }
+
+.actividadesgrid a {
+    color: white;
+}
+
+
