@@ -2,7 +2,6 @@
     background:$c-grey1;
 }
 .footeritems{
-    padding: 1.4rem  1.4rem;
     color: white;
 }
 @media only screen and (min-width: $MQ-M){
@@ -11,6 +10,7 @@
     }
 }
 .logofooter{
+    padding: 1.4rem  1.4rem;
     margin-bottom: 2.125rem;
 }
 @media only screen and (min-width: $MQ-M){
@@ -20,17 +20,18 @@
     }
 }
 .contactos{
+    margin-right: 2rem;
     color: $c-orange1;
     font-weight: bold;
 }
 @media only screen and (min-width: $MQ-M){
-    .contactos{
+    .textocontactos{
         margin-right:7.6rem;
     }
 }
 .menufooter a{
     color: white;
-    margin-right: 7.5rem;   
+    margin-right:8rem;   
 }
 .politica{
     color: white;
@@ -52,8 +53,12 @@
     margin-bottom: 3rem;
     
 }
+.iconosredes{
+    padding: 0 0 1.4rem 1.4rem;
+}
 .instagram, .facebook, .twitter{
     width: 40px;
     height: 40px;
     margin-right: 2.3rem;
+
 }

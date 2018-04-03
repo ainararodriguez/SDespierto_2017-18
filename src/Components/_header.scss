@@ -1,3 +1,8 @@
+* {
+    box-sizing:border-box;
+    margin: 0; padding: 0; 
+    }
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -7,17 +12,98 @@
     padding: 1.5rem 1.5rem 0 1.5rem;
     width: 85%;
 }
-
-.menu{
-    text-align: center;
+#menu {
+    position: absolute;
+    top: 1.5rem;
+    margin-left: 20%;
+}
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 20px;
+    
 }
 
-.menuicon{
-    margin-bottom: 0.25rem;
+#menu ul li {
+    position:relative;
+    display: inline-block;
+}
+
+#menu ul li:hover {
+    font-weight: bold;
+}
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+}
+#menu ul ul li {
+    float:none;
+    width:150px
+}
+
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 10px;
+}
+
+#menu ul li:hover > ul {
+    display:block;
 }
 
 .logo-blanco{
     height: auto;
     width: 130px;
-    
 }
+ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+ul .inner.show {
+  /* display: block; */
+}
+ul li {
+  margin: .5em 0;
+}
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  background: orangered(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: 0;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+}
+ul li a.toggle:hover {
+  background: $c-orange6;
+}
+/*MENÚ MOBILE*/
+.menuMobile{
+    display: flex;
+    flex-wrap: wrap;
+    width: 2.5rem;
+}
+.menuHamburguesa{
+    width: 2rem;
+    margin: auto;    
+    flex-direction: column;
+}
+@media  screen and (min-width: $MQ-M){
+    .menuMobile{
+        display: none;
+    }
+}
+hr{
+    margin-bottom: 0.5rem;
+}
+

@@ -1,0 +1,60 @@
+.containerEquipo{
+    max-width: 1024px;
+    margin: auto;
+}
+.cajaEquipo{
+    margin-bottom: 1.75rem;
+}
+.fotoEquipo{
+    width: 100%;
+  
+}
+@media only screen and (min-width: $MQ-M){
+    .fotoEquipo{
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+.small{
+    width: 362px;
+}
+.textoEquipo{
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 1.625rem;
+}
+@media only screen and (min-width: $MQ-M){
+    .textoEquipo{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: $MQ-M){
+    .roolEquipo{
+        display: flex;
+        
+    }
+}
+@media only screen and (min-width: $MQ-M){
+    .primcolumn{
+        width: 50%;
+    }
+}
+.sede{
+    margin-bottom: 1rem;
+}
+.name{
+    margin-bottom: 0;
+}
+.cargo{
+    margin-bottom: 24px;
+}
+@media only screen and (min-width: $MQ-M){
+    .sedesFlex{
+        display: flex;
+        width: 300px;
+    }
+}
+.space{
+    margin-right: 30%;
+}
