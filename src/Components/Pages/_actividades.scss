@@ -1,90 +1,3 @@
-// .p1{
-//     background-image: url(https://unsplash.it/1000/500?random&cache=1);
-// }
-
-// .fotoActividad{
-
-//     height: 385px;
-//     background-size: cover;
-//     background-position: center;
-// }
-
-// .descripcionActividad{
-//     background-color: #CDF7EF;
-//     margin-bottom: 4.5rem;
-// }
-
-// .textDescripcionActividad{
-//     font-weight: bold;
-//     padding-top: 3rem;
-//     padding-bottom: 3rem;
-// }
-
-// .tituloDescrip2{
-//     font-size: 2rem;
-//     line-height: 2.5rem;
-// }
-
-// .datoIcon{
-//     height: 1.5rem;
-//     margin-left: 1.5rem;
-// }
-
-// .datoTitle{
-//     text-transform: uppercase;
-//     font-weight: bold;
-//     color: $c-green2;
-// }
-
-// .datosActividadTitle, .datoTitleVolunt{
-//     color: $c-green2;
-//     font-size: 2rem;
-//     font-weight: bold;
-//     line-height: 2.5rem;
-//     text-transform: none;
-// }
-
-// .datoDescripcion{
-//     margin-bottom: 1.5rem;
-// }
-
-// .datosActividadWrap{
-//     padding-bottom: 4.5rem;
-// }
-
-// .tituloDescrip2{
-//     margin-bottom: 0.75rem;
-// }
-
-
-
-
-// @media only screen and (min-width: $MQ-M){
-//     .textDescripcionActividad{
-//         max-width: 512px;
-//         margin-left: calc(50% - 512px);
-//         padding-left: 1.5rem;
-//     }
-
-//     .datosActividadWrap{
-//         max-width: 1024px;
-//         margin: auto;
-//         padding-left: 1.5rem;
-//         display: flex;
-//         justify-content: space-between;
-//     }
-
-//     .bloqueDatos1, .bloqueDatos2{
-//         width: 50%;
-//         margin-right: 4.5rem;
-//     }
-
-//     .datoIcon{
-//         margin-left: 0px;
-//     }
-
-//}
-
 .nblack{
     font-weight: 700;
 }
@@ -94,11 +7,136 @@
     height: 385px;
     background-size: cover;
     background-position: center;
-    margin-bottom: 3rem;
+    
+}
+.actividadessubtitulo {    
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
 }
 
 .actividadesGradient{
     width: 100%;
     height: 385px;
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+.t-p{
+    
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    grid-area: tituloprogs;
+    padding:.5rem;
+}
+
+.t-e{
+    
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    grid-area: tituloevents;
+    padding:.5rem;
+}
+
+.actividadestitulo {
+    display: grid;
+    padding: 10px;
+    grid-template-areas: 
+        "tituloprogs tituloprogs"
+        "programas programas"
+        "tituloevents tituloevents"
+        "eventos eventos";
+     
+}
+
+@media (min-width: 500px) {
+    .actividadestitulo {
+        display:grid;
+        padding: 10px;
+        grid-template-areas:
+        "tituloprogs tituloevents"
+        "programas eventos";
+    }
+    .actividadessubtitulo {    
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+}
+
+.actividadeslistas {
+    display: grid;
+    grid-area: listas;
+    padding: 1.5rem;
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.actividadesprogramas {
+    grid-area: programas;
+    padding: 1rem;
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.actividadescellprograma{
+    background-color: #359482;
+    display: grid;
+    grid-template-columns: .9fr .1fr;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: .5rem;
+}
+
+.actividadeseventos {
+    grid-area: eventos;
+    padding: 1rem;
+    display: grid;
+    grid-row-gap:10px;
+    align-items: start;
+    align-content: start;
+}
+
+.actividadescellevento{
+    background-color: #6FCF97;
+    display: grid;
+    grid-template-columns: .9fr .1fr;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: .5rem;
+   
+}
+
+.actividadestitulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    justify-items: start;
+}
+
+.actividadestitle{
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+ .actividadesgrid .arrou{
+    align-self: center;
+    justify-self: center;
+ }
+
+.actividadestitulo a {
+    color: white;
+}
+
+.titollistaesq{
+    padding: .5rem;
+}
+
+.titollistadreta{
+    padding:.5rem;
 }

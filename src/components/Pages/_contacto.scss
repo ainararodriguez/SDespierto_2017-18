@@ -1,0 +1,71 @@
+.indicador-contacto{
+    z-index: 4;
+    position: absolute;
+    width: 90px;
+    height: 0.2rem;
+    background: orangered;
+    top: 4rem;
+    left: 39rem;
+}
+.cabeceraContacto{
+    background-image: url(../img/fotocontacto.jpg);
+    height: 24rem;
+    background-size: cover;
+    background-position: top;
+    z-index:1;
+    margin-bottom: 3rem;
+}
+@media only screen and (min-width: $MQ-M){
+    .FormularioWrap{
+        margin-left: 3rem;
+        display: flex;
+    }
+}
+@media only screen and (min-width: $MQ-L){
+    .FormularioWrap{
+        margin-left:8.0625rem;
+    }
+}
+@media only screen and (min-width: $MQ-M){
+    .containerFormulario{
+        margin-right: 5rem;
+    }
+}
+@media only screen and (min-width: $MQ-L){
+    .containerFormulario{
+        margin-right: 12rem;
+    }
+}
+@media only screen and (min-width: $MQ-M){
+    .textoFormulario{
+        width: 22rem;
+    }
+}
+.formulario{
+    width: 312px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;    
+}
+.label{
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.sede{
+    width: 17.4rem;
+    margin-bottom: 0.875rem;
+}
+.link{
+    text-decoration: underline;
+    color: $c-orange6;
+    font-weight: bold;
+}
+.maps{
+    margin-bottom: 3rem;
+}
+.gracias{
+    text-align: center;
+    margin:0 auto;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}

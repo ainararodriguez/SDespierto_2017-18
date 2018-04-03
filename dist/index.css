@@ -110,12 +110,43 @@ p {
   margin: 0px;
 }
 
+.transparenciaFoto {
+  position: absolute;
+  z-index: 2;
+  height: 24rem;
+  width: 100%;
+  background-color: black;
+  opacity: .3;
+}
+
+@media only screen and (min-width: 1024px) {
+  .transparenciaFoto {
+    height: 24rem;
+  }
+}
+
 .cabeceraCategoria {
   background-image: url(../img/foto_conocenos.jpg);
-  height: 385px;
+  height: 24rem;
   background-size: cover;
   background-position: center;
+  z-index: 1;
   margin-bottom: 3rem;
+}
+
+.cabeceraCategoriaColor {
+  display: flex;
+  background: #2A7C9E;
+  height: 20rem;
+  background-position: center;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .cabeceraCategoriaColor {
+    height: 21rem;
+  }
 }
 
 .gradient {
@@ -126,11 +157,24 @@ p {
 
 .textosCategoria {
   color: white;
-  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+
+@media only screen and (min-width: 1024px) {
+  .textosCategoria {
+    margin-left: 8rem;
+  }
 }
 
 .tituloCategoria {
-  padding-top: 200px;
+  padding-top: 120px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tituloCategoria {
+    margin-left: 8rem;
+  }
 }
 
 .bloque-cabecera {
@@ -171,6 +215,13 @@ p {
   }
   .descripcionCategoria {
     max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .descripcionCategoria {
+    max-width: 80%;
+    margin-left: 8rem;
   }
 }
 
@@ -227,12 +278,20 @@ p {
 
 .footeritems {
   color: white;
+  margin: auto;
+  max-width: 1024px;
 }
 
 @media only screen and (min-width: 969px) {
   .containeritems {
     display: flex;
   }
+}
+
+.link {
+  text-decoration: underline;
+  color: #FC4A00;
+  font-weight: bold;
 }
 
 .logofooter {
@@ -244,19 +303,14 @@ p {
   .containerfooter {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
 .contactos {
-  margin-right: 2rem;
+  margin-right: 5rem;
   color: #FF8552;
   font-weight: bold;
-}
-
-@media only screen and (min-width: 969px) {
-  .textocontactos {
-    margin-right: 7.6rem;
-  }
 }
 
 .menufooter a {
@@ -270,7 +324,7 @@ p {
 
 @media only screen and (min-width: 1024px) {
   .politica {
-    margin-right: 13.4rem;
+    margin-right: 5rem;
   }
 }
 
@@ -337,13 +391,51 @@ p {
 }
 
 .header {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
   color: white;
   padding: 1.5rem 1.5rem 0 1.5rem;
-  width: 85%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .toggle {
+    margin: auto;
+    max-width: 1024px;
+  }
+}
+
+#menu {
+  display: flex;
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 5%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navegador {
+    margin-left: 10%;
+  }
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+#menu ul li {
+  position: relative;
+  display: inline-block;
 }
 
 #menu {
@@ -363,11 +455,6 @@ p {
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
-}
-
-#menu ul li {
-  position: relative;
-  display: inline-block;
 }
 
 #menu ul li:hover {
@@ -398,17 +485,14 @@ p {
 
 .logo-blanco {
   height: auto;
-  width: 130px;
+  width: 17.25rem;
 }
 
 ul .inner {
+  background: #FC4A00;
   padding-left: 1em;
   overflow: hidden;
   display: none;
-}
-
-ul .inner.show {
-  /* display: block; */
 }
 
 ul li {
@@ -419,7 +503,7 @@ ul li a.toggle {
   width: 100%;
   display: block;
   background: orangered(0, 0, 0, 0.78);
-  color: #fefefe;
+  color: white;
   padding: 0;
   border-radius: 0.15em;
   transition: background .3s ease;
@@ -854,13 +938,128 @@ ul {
   height: 385px;
   background-size: cover;
   background-position: center;
-  margin-bottom: 3rem;
+}
+
+.actividadessubtitulo {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
 }
 
 .actividadesGradient {
   width: 100%;
   height: 385px;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.t-p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  grid-area: tituloprogs;
+  padding: .5rem;
+}
+
+.t-e {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  grid-area: tituloevents;
+  padding: .5rem;
+}
+
+.actividadestitulo {
+  display: grid;
+  padding: 10px;
+  grid-template-areas: "tituloprogs tituloprogs" "programas programas" "tituloevents tituloevents" "eventos eventos";
+}
+
+@media (min-width: 500px) {
+  .actividadestitulo {
+    display: grid;
+    padding: 10px;
+    grid-template-areas: "tituloprogs tituloevents" "programas eventos";
+  }
+  .actividadessubtitulo {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+}
+
+.actividadeslistas {
+  display: grid;
+  grid-area: listas;
+  padding: 1.5rem;
+  font-size: 1rem;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.actividadesprogramas {
+  grid-area: programas;
+  padding: 1rem;
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+.actividadescellprograma {
+  background-color: #359482;
+  display: grid;
+  grid-template-columns: .9fr .1fr;
+  align-items: center;
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+
+.actividadeseventos {
+  grid-area: eventos;
+  padding: 1rem;
+  display: grid;
+  grid-row-gap: 10px;
+  align-items: start;
+  align-content: start;
+}
+
+.actividadescellevento {
+  background-color: #6FCF97;
+  display: grid;
+  grid-template-columns: .9fr .1fr;
+  align-items: center;
+  padding-left: 1rem;
+  padding-top: .5rem;
+}
+
+.actividadestitulo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  justify-items: start;
+}
+
+.actividadestitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.actividadesgrid .arrou {
+  align-self: center;
+  justify-self: center;
+}
+
+.actividadestitulo a {
+  color: white;
+}
+
+.titollistaesq {
+  padding: .5rem;
+}
+
+.titollistadreta {
+  padding: .5rem;
 }
 
 .p1f1 {
@@ -1000,11 +1199,59 @@ ul {
 }
 
 .cajaEquipo {
+  margin-top: 4.5rem;
   margin-bottom: 1.75rem;
 }
 
-.fotoEquipo {
-  width: 100%;
+.fotoPatronato {
+  background-image: url(../img/fotopatronato.jpg);
+  height: 24rem;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.fotoContacto {
+  background-image: url(../img/fotocontacto.jpg);
+  height: 24rem;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.fotoMadrid {
+  background-image: url(../img/fotomadrid.jpg);
+  height: 24rem;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.fotoValencia {
+  background-image: url(../img/fotovalencia.jpg);
+  height: 24rem;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.fotoSevilla {
+  background-image: url(../img/fotosevilla.jpg);
+  height: 24rem;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .fotoPatronato {
+    max-width: 1024px;
+  }
 }
 
 @media only screen and (min-width: 969px) {
@@ -1057,68 +1304,105 @@ ul {
 @media only screen and (min-width: 969px) {
   .sedesFlex {
     display: flex;
-    width: 300px;
+    margin: auto;
   }
 }
 
-.space {
-  margin-right: 30%;
+@media only screen and (min-width: 1024px) {
+  .sedesFlex {
+    justify-content: space-around;
+  }
 }
 
-.img-banner-voluntario {
-  z-index: 1;
-  right: 0;
-  width: 100%;
-}
-
-.texto-banner-voluntariado {
-  position: relative;
-  color: white;
-  font-weight: 900;
-  margin-top: 4.5rem;
-  max-width: 60%;
-}
-
-.boton-voluntario {
-  position: relative;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-.contenido-banner-voluntariado {
+.indicador-equipo {
   position: absolute;
-  z-index: 2;
+  width: 83px;
+  height: 0.2rem;
+  background: orangered;
+  top: 4rem;
+  left: 22.8rem;
 }
 
-a {
-  text-decoration: none;
-}
-
-.banner-participa {
-  position: relative;
-}
-
-.img-banner-participa {
-  z-index: 1;
-  right: 0;
-  width: 100%;
-}
-
-.texto-banner-participa {
-  position: relative;
-  color: white;
-  font-weight: 900;
-  margin-top: 4.5rem;
-  max-width: 60%;
-}
-
-.boton-participa {
-  position: relative;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-.contenido-banner-participa {
+.indicador-contacto {
+  z-index: 4;
   position: absolute;
-  z-index: 2;
+  width: 90px;
+  height: 0.2rem;
+  background: orangered;
+  top: 4rem;
+  left: 39rem;
+}
+
+.cabeceraContacto {
+  background-image: url(../img/fotocontacto.jpg);
+  height: 24rem;
+  background-size: cover;
+  background-position: top;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 969px) {
+  .FormularioWrap {
+    margin-left: 3rem;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .FormularioWrap {
+    margin-left: 8.0625rem;
+  }
+}
+
+@media only screen and (min-width: 969px) {
+  .containerFormulario {
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .containerFormulario {
+    margin-right: 12rem;
+  }
+}
+
+@media only screen and (min-width: 969px) {
+  .textoFormulario {
+    width: 22rem;
+  }
+}
+
+.formulario {
+  width: 312px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.sede {
+  width: 17.4rem;
+  margin-bottom: 0.875rem;
+}
+
+.link {
+  text-decoration: underline;
+  color: #FC4A00;
+  font-weight: bold;
+}
+
+.maps {
+  margin-bottom: 3rem;
+}
+
+.gracias {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }

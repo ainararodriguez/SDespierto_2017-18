@@ -3,11 +3,18 @@
 }
 .footeritems{
     color: white;
+    margin: auto;
+    max-width: 1024px;
 }
 @media only screen and (min-width: $MQ-M){
     .containeritems{
         display: flex;
     }
+}
+.link {
+    text-decoration: underline;
+    color: #FC4A00;
+    font-weight: bold;
 }
 .logofooter{
     padding: 1.4rem  1.4rem;
@@ -17,17 +24,13 @@
     .containerfooter{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 .contactos{
-    margin-right: 2rem;
+    margin-right: 5rem;
     color: $c-orange1;
     font-weight: bold;
-}
-@media only screen and (min-width: $MQ-M){
-    .textocontactos{
-        margin-right:7.6rem;
-    }
 }
 .menufooter a{
     color: white;
@@ -39,7 +42,7 @@
 }
 @media only screen and (min-width: $MQ-L){
     .politica{
-        margin-right: 13.4rem;
+        margin-right: 5rem;
     }
 }
 .copyrightitem{
