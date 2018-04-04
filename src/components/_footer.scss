@@ -57,7 +57,12 @@
     
 }
 .iconosredes{
-    padding: 0 0 1.4rem;
+    padding: 0 0 1.4rem 1.5rem;
+}
+@media only screen and (min-width: $MQ-M){
+    .iconosredes{
+        padding-left: 0;
+    }
 }
 .instagram, .facebook, .twitter{
     width: 40px;

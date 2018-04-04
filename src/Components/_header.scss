@@ -20,6 +20,7 @@
 }
 #menu {
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     z-index: 4;
     top: 1.5rem;
@@ -40,7 +41,17 @@
     color:#fff;
     text-decoration:none;
     padding:10px 20px;
+    font-size: 12px;
 }
+.active{
+    font-weight: bold;
+    background:$c-orange6;
+}
+@media only screen and (min-width: $MQ-M){
+    #menu ul a {
+        font-size: 1rem;
+     }
+ }
 
 #menu ul li {
     position:relative;
@@ -76,7 +87,13 @@
 }
 .logo-blanco{
     height: auto;
-    width: 17.25rem;
+    width: 130px;
+    
+}
+@media only screen and (min-width: $MQ-L){
+    .logo-blanco{
+        width: 17.25rem;
+    }
 }
 ul .inner {
     background: $c-orange6;
