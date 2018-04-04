@@ -1,0 +1,112 @@
+.containerEquipo{
+    max-width: 1024px;
+    margin: auto;
+}
+.cajaEquipo{
+    margin-top: 4.5rem;
+    margin-bottom: 1.75rem;
+}
+.fotoPatronato{
+    background-image: url(../img/fotopatronato.jpg);
+    height: 24rem;
+    background-size: cover;
+    background-position: top;
+    z-index:1;
+    margin-bottom: 3rem; 
+}
+.fotoContacto{
+    background-image: url(../img/fotocontacto.jpg);
+    height: 24rem;
+    background-size: cover;
+    background-position: top;
+    z-index:1;
+    margin-bottom: 3rem; 
+}
+.fotoMadrid{
+    background-image: url(../img/fotomadrid.jpg);
+    height: 24rem;
+    background-size: cover;
+    background-position: top;
+    z-index:1;
+    margin-bottom: 3rem; 
+}
+.fotoValencia{
+    background-image: url(../img/fotovalencia.jpg);
+    height: 24rem;
+    background-size: cover;
+    background-position: top;
+    z-index:1;
+    margin-bottom: 3rem; 
+}
+.fotoSevilla{
+    background-image: url(../img/fotosevilla.jpg);
+    height: 24rem;
+    background-size: cover;
+    background-position: top;
+    z-index:1;
+    margin-bottom: 3rem; 
+}
+@media only screen and (min-width: $MQ-L){
+    .fotoPatronato{
+        max-width: 1024px;
+    }
+}
+@media only screen and (min-width: $MQ-M){
+    .fotoEquipo{
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+.small{
+    width: 362px;
+}
+.textoEquipo{
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 1.625rem;
+}
+@media only screen and (min-width: $MQ-M){
+    .textoEquipo{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: $MQ-M){
+    .roolEquipo{
+        display: flex;
+        
+    }
+}
+@media only screen and (min-width: $MQ-M){
+    .primcolumn{
+        width: 50%;
+    }
+}
+.sede{
+    margin-bottom: 1rem;
+}
+.name{
+    margin-bottom: 0;
+}
+.cargo{
+    margin-bottom: 24px;
+}
+@media only screen and (min-width: $MQ-M){
+    .sedesFlex{
+        display: flex;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: $MQ-L){
+    .sedesFlex{
+        justify-content: space-around;
+    }
+}
+.indicador-equipo{
+    position: absolute;
+    width: 83px;
+    height: 0.2rem;
+    background: orangered;
+    top: 4rem;
+    left: 22.8rem;
+}

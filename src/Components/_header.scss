@@ -57,6 +57,23 @@
     position:relative;
     display: inline-block;
 }
+#menu {
+    position: absolute;
+    top: 1.5rem;
+    margin-left: 20%;
+}
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 20px;
+    
+}
 
 #menu ul li:hover {
     font-weight: bold;
