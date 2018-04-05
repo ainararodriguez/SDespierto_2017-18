@@ -1,0 +1,200 @@
+* {
+    box-sizing:border-box;
+    margin: 0; padding: 0; 
+    }
+
+.header{
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#menu {
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 4;
+    padding-top: 1.5rem;
+    margin-left: 5%;
+    width: 100%;
+    background-color: transparent;
+}
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 10px;
+    font-size: 12px;
+}
+
+#menu ul li {
+    position:relative;
+}
+
+#menu ul ul {
+    top:100%;
+    left:0;
+    padding:0;
+}
+#menu ul ul li {
+    float:none;
+    width:250px;
+}
+
+#menu ul ul a {
+    line-height:50%;
+    padding:10px 20px;
+}
+
+.logo-blanco{
+    height: auto;
+    width: 130px;
+    
+}
+
+ul li {
+  margin: .5em 0;
+}
+.menuMobile{
+    display: flex;
+}
+.menuHamburguesa{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 1.5rem;
+    right: calc(5% + 40px);
+    cursor: pointer;
+}
+#menu span {
+    background: white;
+    width: 30px;
+    height: 2px;
+    margin: auto;
+    position: absolute;
+    transition: all 1s 0.2s ease, top 0.2s 0.4s linear, -webkit-transform 0.4s ease;
+}
+#menu.desplegado span.topSpan {
+    top: 15px;
+    transform: rotate(-45deg);
+    transition: all 0.8s 0.2s ease, top 0.2s linear;
+}
+#menu.desplegado span.centerSpan {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+#menu.desplegado span.bottomSpan {
+    top: 15px;
+    transform: rotate(45deg);
+    transition: all 0.8s 0.2s ease, top 0.2s linear;
+}
+span.topSpan {
+    top: 5px;
+}
+span.centerSpan {
+    top: 15px;
+    opacity: 1;
+}
+span.bottomSpan {
+    top: 25px;
+}
+
+#menu.desplegado {
+    background-color: $c-orange6;
+    transition: all 0.4s ease;
+}
+#menu .navegador{
+    display: none;
+}
+#menu.desplegado .navegador{
+    display: inline;   
+}
+
+@media only screen and (min-width: $MQ-M){
+    .header{
+        display: flex;
+    }
+    #menu {
+        display: flex;
+        top: 1.5rem;
+        padding-top:0;
+    }
+    #menu.desplegado {
+        background-color: transparent;
+    }
+    
+    #menu .small {
+        width:126px;
+    }
+    .active{
+        font-weight: bold;
+        text-decoration: underline;
+        color: white !important;
+        /*background:$c-orange6;*/
+    }
+    #menu ul li {
+         display: inline-block;
+    }
+    #menu ul ul {
+        display:none;
+        position:absolute;
+    }
+    #menu ul a {
+        font-size: 1rem;
+        padding:10px 20px;
+     }
+    ul .inner {
+        background: $c-orange6;
+        padding-left: 1em;
+        overflow: hidden;
+        display: none;
+    }
+    ul li a.toggle {
+        width: 100%;
+        display: block;
+        background: orangered(0, 0, 0, 0.78);
+        color: white;
+        padding: 0;
+        transition: background .3s ease;
+    }
+    ul li a.toggle:hover {
+        background:  $c-orange6;
+    }
+    #menu ul li:hover {
+        font-weight: bold;
+    }
+    #menu ul li:hover > ul {
+        display:block;
+    }
+    #menu ul ul a {
+        padding:10px 10px;
+    }
+    #menu .navegador{
+        display: inline;
+    }
+    .menuHamburguesa{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: $MQ-L){
+    .navegador{
+        margin-left: 10%;
+    }
+    .logo-blanco{
+        width: 17.25rem;
+    }
+    .toggle{
+        margin:auto;
+        max-width: 1024px;
+    }
+    
+}
