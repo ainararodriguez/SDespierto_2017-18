@@ -2,35 +2,39 @@
     background:$c-grey1;
 }
 .footeritems{
-    padding: 1.4rem  1.4rem;
     color: white;
+    margin: auto;
+    max-width: 1024px;
 }
 @media only screen and (min-width: $MQ-M){
     .containeritems{
         display: flex;
     }
 }
+.link {
+    text-decoration: underline;
+    color: #FC4A00;
+    font-weight: bold;
+}
 .logofooter{
+    padding: 1.4rem  1.4rem;
     margin-bottom: 2.125rem;
 }
 @media only screen and (min-width: $MQ-M){
     .containerfooter{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 .contactos{
+    margin-right: 5rem;
     color: $c-orange1;
     font-weight: bold;
 }
-@media only screen and (min-width: $MQ-M){
-    .contactos{
-        margin-right:7.6rem;
-    }
-}
 .menufooter a{
     color: white;
-    margin-right: 7.5rem;   
+    margin-right:8rem;   
 }
 .politica{
     color: white;
@@ -38,7 +42,7 @@
 }
 @media only screen and (min-width: $MQ-L){
     .politica{
-        margin-right: 13.4rem;
+        margin-right: 5rem;
     }
 }
 .copyrightitem{
@@ -52,8 +56,17 @@
     margin-bottom: 3rem;
     
 }
+.iconosredes{
+    padding: 0 0 1.4rem 1.5rem;
+}
+@media only screen and (min-width: $MQ-M){
+    .iconosredes{
+        padding-left: 0;
+    }
+}
 .instagram, .facebook, .twitter{
     width: 40px;
     height: 40px;
     margin-right: 2.3rem;
+
 }
