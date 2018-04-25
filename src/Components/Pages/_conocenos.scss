@@ -1,0 +1,150 @@
+.tituloTransparencia{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.textoCompromiso{
+    margin-top: 3rem;
+}
+
+.textoCompromiso2{
+    margin-bottom: 3rem;
+}
+
+.textoCompromiso, .textoCompromiso2,{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.auditoria{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.iconPdf{
+    margin-left: 1.5rem;
+}
+
+.enlaceAuditoria{
+    text-decoration: underline;
+    color: $c-orange6;
+    font-weight: bold;
+    margin-left: 0.75rem;
+}
+
+.imagenTransparencia{
+    background-image: url(../img/foto_conocenos2.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    margin-bottom: 3rem; 
+}
+
+.tituloTextoConocenos{
+    margin-bottom: 1.5rem;
+}
+
+.textoMision{
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.conocenosList{
+    //list-style: inside;
+    padding-left: 2.5rem;
+}
+
+.conocenosItem{
+    margin-bottom: 2rem;
+}
+
+.vision, .valores{
+    margin-bottom: 3rem;
+}
+
+.imagenValores{
+    background-image: url(../img/foto_conocenos3.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 400px;
+    background-position: center; 
+}
+
+
+
+/*NAVEGACION SUBCATEGORIAS
+
+.bloqSubcat1, .bloqSubcat2{
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 3rem 1.5rem;
+}
+
+.bloqSubcat1{
+    background-color: $c-blue5;
+}
+
+.bloqSubcat2{
+    background-color: $c-blue6;
+}
+
+.ilustracion{
+    width: 3rem;;
+}
+
+.flecha{
+    height: 1.5rem;
+}
+
+.tituloBloqSubcat{
+    font-weight: bold;
+    font-size: 1.25rem;
+}*/
+
+
+@media only screen and (min-width: $MQ-M){
+    .transparenciaWrap, .textosConocenos{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .textoTransparencia {
+        display: flex;
+    }
+
+    .textoCompromiso{
+        margin-top: 0px;
+    }
+
+    .bloqTransparencia1{
+        width: 50%;
+        margin-right: 4.5rem;
+    }
+
+    .iconPdf{
+        margin-left: 1.0px;
+    }
+
+    .transparenciaWrap, .textosConocenos, .mision{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .mision{
+        width: 50%;
+    }
+
+    .visionValoresWrap{
+        display: flex;
+    }
+
+    .vision, .valores{
+        width: 50%;
+        margin-right: 3rem;
+    }
+}

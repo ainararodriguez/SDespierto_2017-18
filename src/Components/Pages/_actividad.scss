@@ -1,0 +1,97 @@
+.p1f1{background-image: url(../img/p1foto1.jpg);}
+.p1f2{background-image: url(../img/p1foto2.jpg);}
+.p2f1{background-image: url(../img/p2foto1.jpg);}
+.p2f2{background-image: url(../img/p2foto2.jpg);}
+.p3f1{background-image: url(../img/p3foto1.jpg);}
+.p3f2{background-image: url(../img/p3foto2.jpg);}
+.p4f1{background-image: url(../img/p4foto1.jpg);}
+.p4f2{background-image: url(../img/p4foto2.jpg);}
+.e1f1{background-image: url(../img/e1foto1.jpg);}
+.e1f2{background-image: url(../img/e1foto2.jpg);}
+.e2f1{background-image: url(../img/e2foto1.jpg);}
+.e2f2{background-image: url(../img/e2foto2.jpg);}
+.e3f1{background-image: url(../img/e3foto1.jpg);}
+.e3f2{background-image: url(../img/e3foto2.jpg);}
+
+.fotoActividad{
+
+    height: 24.1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.descripcionActividad{
+    background-color: #CDF7EF;
+    margin-bottom: 4.5rem;
+}
+
+.textDescripcionActividad{
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.tituloDescrip2{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.datoIcon{
+    height: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.datoTitle{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $c-green2;
+}
+
+.datosActividadTitle, .datoTitleVolunt{
+    color: $c-green2;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    text-transform: none;
+}
+
+.datoDescripcion{
+    margin-bottom: 1.5rem;
+}
+
+.datosActividadWrap{
+    padding-bottom: 4.5rem;
+}
+
+.tituloDescrip2{
+    margin-bottom: 0.75rem;
+}
+
+
+
+
+@media only screen and (min-width: $MQ-M){
+    .textDescripcionActividad{
+        max-width: 512px;
+        margin-left: calc(50% - 512px);
+        padding-left: 1.5rem;
+    }
+
+    .datosActividadWrap{
+        max-width: 1024px;
+        margin: auto;
+        padding-left: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bloqueDatos1, .bloqueDatos2{
+        width: 50%;
+        margin-right: 4.5rem;
+    }
+
+    .datoIcon{
+        margin-left: 0px;
+    }
+
+}

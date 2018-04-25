@@ -1,0 +1,92 @@
+
+.timelineHistoria{
+    padding-top: 3rem;
+}
+.timelines{
+    margin-bottom: 3rem;
+}
+.timeline{
+    background-image: url(../img/line.png);
+    background-repeat: repeat-y;
+    overflow: auto;
+    margin-bottom: 2.5rem;
+    margin-left: 0.75rem;
+}
+
+.experienciaTitle{color:red;}
+
+.eventTimeline{display: flex;}
+
+.year{
+    margin-bottom: 0px;
+}
+
+.year, .eventTitle{
+    font-weight: bold;
+    color: $c-blue2; 
+}
+
+.lastEvent{background-color: white;}
+
+.timeline span {
+    display:block;
+    position: absolute;
+    background:$c-blue2;
+    margin-left: -0.375rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    margin-top:0.375rem;
+}
+
+.blankFirst{
+    display:block;
+    position: absolute;
+    background: white;
+    margin-left: -0.375rem;
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.blankLast, .blankLastlast{
+    display:block;
+    position: absolute;
+    background: white;
+    margin-left: -0.375rem;
+    width: 0.75rem;
+    margin-top:1.1rem;
+}
+
+.blankLast{height: 178px;}
+
+.blankLastlast{height:246px;}
+
+.textoTimeline{
+    margin-left: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: $MQ-M){
+    .timelineHistoria{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .textoTimeline{
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+    }
+
+    .yearTitleWrap{
+        width: 25%;
+        max-width: 150px;
+    }
+
+    .historiaDescription{
+        width: 50%;
+    }
+}
