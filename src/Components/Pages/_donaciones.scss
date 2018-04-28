@@ -1,0 +1,114 @@
+.header-d {
+    color:white;
+    background-image: url("../img/pasillo.jpg");
+    background-repeat: no-repeat;
+    grid-area: header; 
+    background-size: cover;
+    background-position: center center;
+   
+}
+
+    .gradient {
+        display: flex;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+
+}
+   .texto-d {
+       color:whitesmoke;
+       font-weight: 800;
+       line-height: 24px;
+       align-self: flex-end;
+       padding-left: 2.5rem;
+   }
+
+   .texto-c {
+        color:whitesmoke;
+        font-weight: 700;
+        line-height: 24px;
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+
+    }
+
+   .text-d {
+        color:black;
+        line-height: 24px;
+        align-self: flex-end;
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+   }
+  
+
+.slogan {
+    background-color: #FF611F;
+    font-weight: 600;
+    line-height: 42px;
+    color: white;
+    grid-area: slogan;
+    align-items:center;
+    display: flex;
+
+}
+
+ .opciones-donacion {
+    grid-area: opciones;
+    padding-top: 1rem;
+ }
+
+ .estilo-donacion {
+     font-size: 1rem;
+ }
+
+ .imagen {
+    background-image: url("../img/heart.png");
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+    grid-area: imagen;    
+}
+
+.cuenta {
+    grid-area: cuenta;
+  
+}
+
+.datos-d {
+    font-size: 1rem;
+    color:#FC4A00;
+    font-weight: 700;
+}
+
+.donaciones {
+    display: grid;
+    height: auto;
+    // font-family: Raleway;
+    grid-template-areas: 
+    "header"
+    "slogan"
+    "opciones"
+    "imagen"
+    "cuenta";
+    grid-template-rows: 2fr 1fr 2fr 2fr 2fr;
+   
+  
+
+}
+
+@media (min-width: 768px) {
+    .donaciones {
+        display: grid;
+        // font-family: Raleway;
+        grid-template-areas:
+        "header header"
+        "slogan slogan"
+        "opciones imagen"
+        "cuenta imagen";
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 385px 1fr 1fr 1fr;
+    }
+
+
+
+}
+
